@@ -1,0 +1,600 @@
+{
+  "descripcion": "Netlist de la Práctica 5 (solo Arduinos: sin 74HC194, sin transistores, sin capacitores). Fuente única para CircuitView. Pines = numeración física.",
+  "componentes": [
+    {
+      "id": "ARD_A",
+      "tipo": "arduino_uno",
+      "rol": "Contador Johnson en software: 8 flip-flops D + NOT(Q7) a la entrada",
+      "pinesUsados": [
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "GND"
+      ],
+      "registroInterno": {
+        "bits": 8,
+        "entradaSerial": "NOT Q7",
+        "descripcion": "ff[0..7]; en cada flanco ff[i]=ff[i-1], ff[0]=!ff[7]"
+      }
+    },
+    {
+      "id": "ARD_B",
+      "tipo": "arduino_uno",
+      "rol": "Lectura del bus y multiplexado de display",
+      "pinesUsados": [
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "GND"
+      ]
+    },
+    {
+      "id": "DS1",
+      "tipo": "F5101AH",
+      "catodoComun": true,
+      "posicion": "centenas",
+      "pinout": {
+        "1": "e",
+        "2": "d",
+        "3": "COM",
+        "4": "c",
+        "5": "DP",
+        "6": "b",
+        "7": "a",
+        "8": "COM",
+        "9": "f",
+        "10": "g"
+      }
+    },
+    {
+      "id": "DS2",
+      "tipo": "F5101AH",
+      "catodoComun": true,
+      "posicion": "decenas",
+      "pinout": {
+        "1": "e",
+        "2": "d",
+        "3": "COM",
+        "4": "c",
+        "5": "DP",
+        "6": "b",
+        "7": "a",
+        "8": "COM",
+        "9": "f",
+        "10": "g"
+      }
+    },
+    {
+      "id": "DS3",
+      "tipo": "F5101AH",
+      "catodoComun": true,
+      "posicion": "unidades",
+      "pinout": {
+        "1": "e",
+        "2": "d",
+        "3": "COM",
+        "4": "c",
+        "5": "DP",
+        "6": "b",
+        "7": "a",
+        "8": "COM",
+        "9": "f",
+        "10": "g"
+      }
+    },
+    {
+      "id": "R_a",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "R_b",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "R_c",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "R_d",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "R_e",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "R_f",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "R_g",
+      "tipo": "resistencia",
+      "valor": "1kΩ"
+    },
+    {
+      "id": "LED_Q0",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q1",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q2",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q3",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q4",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q5",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q6",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "LED_Q7",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q0",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q1",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q2",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q3",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q4",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q5",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q6",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "RL_Q7",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "LED_CLK",
+      "tipo": "led",
+      "opcional": true
+    },
+    {
+      "id": "RL_CLK",
+      "tipo": "resistencia",
+      "valor": "1kΩ",
+      "opcional": true
+    },
+    {
+      "id": "SW_RST",
+      "tipo": "pulsador",
+      "opcional": true,
+      "nota": "o un switch del DIP"
+    }
+  ],
+  "redes": [
+    {
+      "nombre": "GND",
+      "senal": "const_low",
+      "nodos": [
+        "ARD_A.GND",
+        "ARD_B.GND",
+        "SW_RST.2",
+        "RL_Q0.2",
+        "RL_Q1.2",
+        "RL_Q2.2",
+        "RL_Q3.2",
+        "RL_Q4.2",
+        "RL_Q5.2",
+        "RL_Q6.2",
+        "RL_Q7.2",
+        "RL_CLK.2"
+      ]
+    },
+    {
+      "nombre": "Q0",
+      "senal": "q0",
+      "nodos": [
+        "ARD_A.D2",
+        "ARD_B.A0",
+        "LED_Q0.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q0_K",
+      "senal": "q0",
+      "nodos": [
+        "LED_Q0.K",
+        "RL_Q0.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q1",
+      "senal": "q1",
+      "nodos": [
+        "ARD_A.D3",
+        "ARD_B.A1",
+        "LED_Q1.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q1_K",
+      "senal": "q1",
+      "nodos": [
+        "LED_Q1.K",
+        "RL_Q1.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q2",
+      "senal": "q2",
+      "nodos": [
+        "ARD_A.D4",
+        "ARD_B.A2",
+        "LED_Q2.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q2_K",
+      "senal": "q2",
+      "nodos": [
+        "LED_Q2.K",
+        "RL_Q2.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q3",
+      "senal": "q3",
+      "nodos": [
+        "ARD_A.D5",
+        "ARD_B.A3",
+        "LED_Q3.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q3_K",
+      "senal": "q3",
+      "nodos": [
+        "LED_Q3.K",
+        "RL_Q3.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q4",
+      "senal": "q4",
+      "nodos": [
+        "ARD_A.D6",
+        "ARD_B.A4",
+        "LED_Q4.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q4_K",
+      "senal": "q4",
+      "nodos": [
+        "LED_Q4.K",
+        "RL_Q4.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q5",
+      "senal": "q5",
+      "nodos": [
+        "ARD_A.D7",
+        "ARD_B.A5",
+        "LED_Q5.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q5_K",
+      "senal": "q5",
+      "nodos": [
+        "LED_Q5.K",
+        "RL_Q5.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q6",
+      "senal": "q6",
+      "nodos": [
+        "ARD_A.D8",
+        "ARD_B.D9",
+        "LED_Q6.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q6_K",
+      "senal": "q6",
+      "nodos": [
+        "LED_Q6.K",
+        "RL_Q6.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "Q7",
+      "senal": "q7",
+      "nodos": [
+        "ARD_A.D9",
+        "ARD_B.D10",
+        "LED_Q7.A"
+      ]
+    },
+    {
+      "nombre": "LED_Q7_K",
+      "senal": "q7",
+      "nodos": [
+        "LED_Q7.K",
+        "RL_Q7.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "CLK",
+      "senal": "clk",
+      "nodos": [
+        "ARD_A.D10",
+        "LED_CLK.A"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "CLK_LED_K",
+      "senal": "clk",
+      "nodos": [
+        "LED_CLK.K",
+        "RL_CLK.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "RESET_N",
+      "senal": "reset_n",
+      "nodos": [
+        "ARD_A.D11",
+        "SW_RST.1"
+      ],
+      "opcional": true
+    },
+    {
+      "nombre": "SEG_a_DRV",
+      "senal": "seg_a",
+      "nodos": [
+        "ARD_B.D2",
+        "R_a.1"
+      ]
+    },
+    {
+      "nombre": "SEG_a",
+      "senal": "seg_a",
+      "nodos": [
+        "R_a.2",
+        "DS1.7",
+        "DS2.7",
+        "DS3.7"
+      ]
+    },
+    {
+      "nombre": "SEG_b_DRV",
+      "senal": "seg_b",
+      "nodos": [
+        "ARD_B.D3",
+        "R_b.1"
+      ]
+    },
+    {
+      "nombre": "SEG_b",
+      "senal": "seg_b",
+      "nodos": [
+        "R_b.2",
+        "DS1.6",
+        "DS2.6",
+        "DS3.6"
+      ]
+    },
+    {
+      "nombre": "SEG_c_DRV",
+      "senal": "seg_c",
+      "nodos": [
+        "ARD_B.D4",
+        "R_c.1"
+      ]
+    },
+    {
+      "nombre": "SEG_c",
+      "senal": "seg_c",
+      "nodos": [
+        "R_c.2",
+        "DS1.4",
+        "DS2.4",
+        "DS3.4"
+      ]
+    },
+    {
+      "nombre": "SEG_d_DRV",
+      "senal": "seg_d",
+      "nodos": [
+        "ARD_B.D5",
+        "R_d.1"
+      ]
+    },
+    {
+      "nombre": "SEG_d",
+      "senal": "seg_d",
+      "nodos": [
+        "R_d.2",
+        "DS1.2",
+        "DS2.2",
+        "DS3.2"
+      ]
+    },
+    {
+      "nombre": "SEG_e_DRV",
+      "senal": "seg_e",
+      "nodos": [
+        "ARD_B.D6",
+        "R_e.1"
+      ]
+    },
+    {
+      "nombre": "SEG_e",
+      "senal": "seg_e",
+      "nodos": [
+        "R_e.2",
+        "DS1.1",
+        "DS2.1",
+        "DS3.1"
+      ]
+    },
+    {
+      "nombre": "SEG_f_DRV",
+      "senal": "seg_f",
+      "nodos": [
+        "ARD_B.D7",
+        "R_f.1"
+      ]
+    },
+    {
+      "nombre": "SEG_f",
+      "senal": "seg_f",
+      "nodos": [
+        "R_f.2",
+        "DS1.9",
+        "DS2.9",
+        "DS3.9"
+      ]
+    },
+    {
+      "nombre": "SEG_g_DRV",
+      "senal": "seg_g",
+      "nodos": [
+        "ARD_B.D8",
+        "R_g.1"
+      ]
+    },
+    {
+      "nombre": "SEG_g",
+      "senal": "seg_g",
+      "nodos": [
+        "R_g.2",
+        "DS1.10",
+        "DS2.10",
+        "DS3.10"
+      ]
+    },
+    {
+      "nombre": "DIG1_COM",
+      "senal": "dig1_n",
+      "nodos": [
+        "ARD_B.D11",
+        "DS1.3",
+        "DS1.8"
+      ]
+    },
+    {
+      "nombre": "DIG2_COM",
+      "senal": "dig2_n",
+      "nodos": [
+        "ARD_B.D12",
+        "DS2.3",
+        "DS2.8"
+      ]
+    },
+    {
+      "nombre": "DIG3_COM",
+      "senal": "dig3_n",
+      "nodos": [
+        "ARD_B.D13",
+        "DS3.3",
+        "DS3.8"
+      ]
+    }
+  ],
+  "senales": {
+    "const_low": "siempre 0",
+    "qN": "bit N del estado del contador (lo escribe A, lo lee B)",
+    "clk": "pulso alto de ~20 ms en cada desplazamiento",
+    "reset_n": "1 en reposo (pull-up); 0 mientras se presiona reset",
+    "seg_x": "segmento x del dígito activo en el multiplexado",
+    "digN_n": "0 cuando el dígito N está encendido (cátodo a GND), 1 apagado"
+  }
+}

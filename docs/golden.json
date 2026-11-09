@@ -1,0 +1,181 @@
+{
+  "descripcion": "Secuencia Johnson 8 bits. bits = Q7..Q0 (MSB a la izquierda). display = [centenas, decenas, unidades], '' = apagado.",
+  "periodo": 16,
+  "estados": [
+    {
+      "paso": 0,
+      "bits": "00000000",
+      "dec": 0,
+      "display": [
+        "",
+        "",
+        "0"
+      ]
+    },
+    {
+      "paso": 1,
+      "bits": "00000001",
+      "dec": 1,
+      "display": [
+        "",
+        "",
+        "1"
+      ]
+    },
+    {
+      "paso": 2,
+      "bits": "00000011",
+      "dec": 3,
+      "display": [
+        "",
+        "",
+        "3"
+      ]
+    },
+    {
+      "paso": 3,
+      "bits": "00000111",
+      "dec": 7,
+      "display": [
+        "",
+        "",
+        "7"
+      ]
+    },
+    {
+      "paso": 4,
+      "bits": "00001111",
+      "dec": 15,
+      "display": [
+        "",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "paso": 5,
+      "bits": "00011111",
+      "dec": 31,
+      "display": [
+        "",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "paso": 6,
+      "bits": "00111111",
+      "dec": 63,
+      "display": [
+        "",
+        "6",
+        "3"
+      ]
+    },
+    {
+      "paso": 7,
+      "bits": "01111111",
+      "dec": 127,
+      "display": [
+        "1",
+        "2",
+        "7"
+      ]
+    },
+    {
+      "paso": 8,
+      "bits": "11111111",
+      "dec": 255,
+      "display": [
+        "2",
+        "5",
+        "5"
+      ]
+    },
+    {
+      "paso": 9,
+      "bits": "11111110",
+      "dec": 254,
+      "display": [
+        "2",
+        "5",
+        "4"
+      ]
+    },
+    {
+      "paso": 10,
+      "bits": "11111100",
+      "dec": 252,
+      "display": [
+        "2",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "paso": 11,
+      "bits": "11111000",
+      "dec": 248,
+      "display": [
+        "2",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "paso": 12,
+      "bits": "11110000",
+      "dec": 240,
+      "display": [
+        "2",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "paso": 13,
+      "bits": "11100000",
+      "dec": 224,
+      "display": [
+        "2",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "paso": 14,
+      "bits": "11000000",
+      "dec": 192,
+      "display": [
+        "1",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "paso": 15,
+      "bits": "10000000",
+      "dec": 128,
+      "display": [
+        "1",
+        "2",
+        "8"
+      ]
+    }
+  ],
+  "sevenSeg": {
+    "orden_bits": "bit0=a bit1=b bit2=c bit3=d bit4=e bit5=f bit6=g, 1=encendido (cátodo común)",
+    "digitos": {
+      "0": 63,
+      "1": 6,
+      "2": 91,
+      "3": 79,
+      "4": 102,
+      "5": 109,
+      "6": 125,
+      "7": 7,
+      "8": 127,
+      "9": 111
+    }
+  }
+}
